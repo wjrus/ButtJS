@@ -18,6 +18,16 @@ You will need to have a Discord account that is already registered and in the ch
 
 When you are ready: `node butt.js`
 
+Running in Docker
+-----------------
+Clone the repo into a buttbot directory, copy `config.js.example` to `/wherever/your/env/file/lives` (and also create the env file with `DISCORD_USERNAME` and `DISCORD_PASSWORD` and `DISCORD_USER_ID` along with `REDIS_HOST=redis` while editing the config to your liking.)
+
+Fire up a [redis](https://hub.docker.com/_/redis/) container named redis.
+
+Build the image with `docker build -t yourname/buttbot .`
+
+Fire up the container with `docker run --name buttbot --restart=always --env-file /wherever/your/env/file/lives --volume /path/to/config.js:/usr/local/src/buttbot/config.js:ro --link redis:redis -d yourname/buttbot`
+
 Contribution
 ------------
 Look I mean this is just a side project with no real direction or effort so if you want to PR something that will make this even better I will not hesistate to accept it.
