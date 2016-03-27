@@ -1,5 +1,5 @@
 {
-  "name": "ButtJS",
+  "name": "buttbot",
   "version": "0.1.1",
   "dependencies": {
     "discord.js": "^3.0.3",
@@ -10,6 +10,7 @@
     "valid-url": "^1.0.9",
     "winston": "^0.9.0"
   },
+  "scripts": { "start": "node butt.js" },
   "engines": {
     "node": "0.12.x"
   }

@@ -161,7 +161,7 @@ function subButt(word) {
         sWord = punc[2],
         pE = punc[3];
 
-    if (shouldWeButt(sWord)) {
+    if (!shouldWeButt(sWord)) {
         return ogWord;
     }
 
