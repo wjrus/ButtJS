@@ -26,7 +26,7 @@ Fire up a [redis](https://hub.docker.com/_/redis/) container named buttis (for e
 
 Build the image with `docker build -t yourname/buttbot .`
 
-Fire up the container with `docker run --name buttbot --restart=always --env-file /wherever/your/env/file/lives --volume /path/to/config.js:/usr/local/src/buttbot/config.js:ro --link buttis:redis -d yourname/buttbot`
+Fire up the container with `docker run --name buttbot --restart=always --env-file /wherever/your/env/file/lives --volume /path/to/config.js:/usr/src/buttbot/config.js:ro --link buttis:redis -d yourname/buttbot`
 
 Contribution
 ------------
