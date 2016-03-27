@@ -20,7 +20,7 @@ When you are ready: `node butt.js`
 
 Running in Docker
 -----------------
-Clone the repo into a buttbot directory, copy `config.js.example` to `/wherever/your/env/file/lives` (and also create the env file with `DISCORD_USERNAME` and `DISCORD_PASSWORD` and `DISCORD_USER_ID` along with `REDIS_HOST=redis` while editing the config to your liking.)
+Clone the repo into a buttbot directory, copy `config.js.example` to `/wherever/your/env/file/lives/config.js` (and also create the env file with `DISCORD_USERNAME` and `DISCORD_PASSWORD` and `DISCORD_USER_ID` along with `REDIS_HOST=redis` while editing the config to your liking.)
 
 Fire up a [redis](https://hub.docker.com/_/redis/) container named redis.
 
