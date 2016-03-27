@@ -22,11 +22,11 @@ Running in Docker
 -----------------
 Clone the repo into a buttbot directory, copy `config.js.example` to `/wherever/your/env/file/lives/config.js` (and also create the env file with `DISCORD_USERNAME` and `DISCORD_PASSWORD` and `DISCORD_USER_ID` along with `REDIS_HOST=redis` while editing the config to your liking.)
 
-Fire up a [redis](https://hub.docker.com/_/redis/) container named redis.
+Fire up a [redis](https://hub.docker.com/_/redis/) container named buttis (for example).
 
 Build the image with `docker build -t yourname/buttbot .`
 
-Fire up the container with `docker run --name buttbot --restart=always --env-file /wherever/your/env/file/lives --volume /path/to/config.js:/usr/local/src/buttbot/config.js:ro --link redis:redis -d yourname/buttbot`
+Fire up the container with `docker run --name buttbot --restart=always --env-file /wherever/your/env/file/lives --volume /path/to/config.js:/usr/local/src/buttbot/config.js:ro --link buttis:redis -d yourname/buttbot`
 
 Contribution
 ------------
