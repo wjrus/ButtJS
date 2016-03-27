@@ -9,6 +9,5 @@ RUN npm install
 
 COPY . /usr/src/buttbot
 
-EXPOSE 5000
 CMD [ "npm", "start" ]
 
